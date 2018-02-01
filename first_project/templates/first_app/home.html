@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "first_app/base.html" %}
+{% load my_extra %}
+    {% block body_block %}
+        <h1>Welcome to Homepage</h1>
+        <p>{{ text|upper }}</p>
+        <p>{{ text|cutting:"wo" }}</p>
+        <h2>{{ number|add:"9999" }}</h2>
+    {% endblock %}
